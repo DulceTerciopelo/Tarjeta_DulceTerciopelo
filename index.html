@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Terciopelo | Links</title>
+    <!-- Tailwind CSS para los estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts para un toque elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons para los íconos limpios -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#4A1C28',    // Chocolate oscuro / Borgoña
+                            main: '#8A2742',    // Red Velvet
+                            light: '#D48C9E',   // Rosa suave
+                            bg: '#FDF8F9',      // Crema rosado muy claro
+                            card: '#FBF1F3'     // Fondo de tarjetas
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Animación suave para los botones */
+        .btn-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(138, 39, 66, 0.2);
+        }
+        .gradient-ig {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        /* Animación para el movimiento sutil del fondo */
+        @keyframes subtleMove {
+            0% { transform: scale(1.05) translate(0, 0); }
+            50% { transform: scale(1.1) translate(-1%, -1%); }
+            100% { transform: scale(1.05) translate(0, 0); }
+        }
+        .bg-animated {
+            animation: subtleMove 25s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#F0E6E8] min-h-screen flex items-center justify-center p-4 antialiased text-brand-dark relative z-0">
+
+    <!-- IMAGEN DE FONDO CON ANIMACIÓN -->
+    <div class="fixed inset-0 z-[-2] overflow-hidden pointer-events-none">
+        <!-- AQUÍ PONES TU IMAGEN DE FONDO -->
+        <!-- Guarda tu imagen como "fondo.jpg" en la carpeta "img" o cambia el nombre aquí -->
+        <img src="img/fondo.jpg" alt="Fondo Animado" class="w-full h-full object-cover bg-animated">
+    </div>
+
+    <!-- CAPA DESVANECIDA (Solo le damos un toque crema/rosa claro para asegurar que el texto se lea) -->
+    <div class="fixed inset-0 z-[-1] bg-[#FDF8F9]/30 pointer-events-none"></div>
+
+    <!-- Contenedor Principal de la Tarjeta (Efecto Vidrio Esmerilado / Glassmorphism) -->
+    <main class="w-full max-w-[400px] bg-white/40 backdrop-blur-xl rounded-[35px] shadow-2xl overflow-hidden relative border border-white/60">
+        
+        <!-- SECCIÓN SUPERIOR (Header) translúcida -->
+        <header class="bg-[#FDF8F9]/50 pt-8 pb-6 px-5 text-center relative rounded-b-[35px] shadow-sm z-10 border-b border-white/40">
+            
+            <!-- ESPACIO PARA EL LOGO -->
+            <div class="w-20 h-20 mx-auto bg-white rounded-full shadow-lg border-[3px] border-white flex items-center justify-center mb-3 overflow-hidden relative group">
+                <!-- Tu logo actual: corregido a .png -->
+                <img src="img/logo.png" alt="Logo Dulce Terciopelo" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Título de la Marca -->
+            <h1 class="font-serif text-3xl text-brand-main mb-0.5 tracking-tight">Dulce Terciopelo</h1>
+            <p class="text-[10px] tracking-[0.2em] text-brand-dark/70 uppercase font-medium">Repostería Creativa</p>
+
+            <!-- Etiquetas / Badges (Se mantienen opacas para destacar) -->
+            <div class="flex flex-wrap justify-center gap-1.5 mt-3">
+                <span class="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-medium text-brand-main shadow-sm border border-white flex items-center gap-1">
+                    🍰 Artesanal
+                </span>
+                <span class="bg-brand-main/10 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-medium text-brand-main shadow-sm border border-white/50 flex items-center gap-1">
+                    ❤️ Hecho con Amor
+                </span>
+                <span class="bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full text-[10px] font-medium text-brand-main shadow-sm border border-white flex items-center gap-1">
+                    🛵 Domicilios
+                </span>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE INFORMACIÓN Y ENLACES (Fondo transparente para ver a través de la tarjeta) -->
+        <section class="p-5 space-y-2.5 bg-transparent -mt-4 pt-7">
+            
+            <!-- Botón de WhatsApp -->
+            <a href="https://wa.me/573153790292" target="_blank" class="flex items-center p-3 bg-white/50 backdrop-blur-md rounded-[14px] gap-3 hover:bg-white/80 transition-colors group border border-white/50 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-main group-hover:scale-110 transition-transform">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[9px] tracking-widest text-brand-light uppercase font-semibold">WhatsApp / Pedidos</span>
+                    <span class="text-[13px] font-semibold text-brand-dark">+57 315 379 0292</span>
+                </div>
+            </a>
+
+            <!-- Botón de Instagram -->
+            <a href="https://www.instagram.com/reposteria_dulcetercipelo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="flex items-center p-3 bg-white/50 backdrop-blur-md rounded-[14px] gap-3 hover:bg-white/80 transition-colors group border border-white/50 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-main group-hover:scale-110 transition-transform">
+                    <i class="ph-fill ph-instagram-logo text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[9px] tracking-widest text-brand-light uppercase font-semibold">Instagram</span>
+                    <span class="text-[13px] font-semibold text-brand-dark">@reposteria_dulcetercipelo</span>
+                </div>
+            </a>
+
+            <!-- Botón de Tienda/Catálogo -->
+            <a href="#" target="_blank" class="flex items-center p-3 bg-white/50 backdrop-blur-md rounded-[14px] gap-3 hover:bg-white/80 transition-colors group border border-white/50 shadow-sm">
+                <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-brand-main group-hover:scale-110 transition-transform">
+                    <i class="ph-fill ph-storefront text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-[9px] tracking-widest text-brand-light uppercase font-semibold">Catálogo en Línea</span>
+                    <span class="text-[13px] font-semibold text-brand-dark">dulceterciopelo.com</span>
+                </div>
+            </a>
+
+            <!-- Botón de TikTok (Próximamente) -->
+            <div class="flex items-center justify-between p-3 bg-white/30 backdrop-blur-md rounded-[14px] border border-dashed border-brand-light/40 opacity-90 cursor-default select-none">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-white/60 shadow-sm flex items-center justify-center text-brand-main/60">
+                        <i class="ph-fill ph-tiktok-logo text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-[9px] tracking-widest text-brand-light uppercase font-semibold">TikTok</span>
+                        <span class="text-[13px] font-semibold text-brand-dark/60">Muy pronto...</span>
+                    </div>
+                </div>
+                <span class="bg-brand-main/10 text-brand-main text-[8px] font-bold px-2 py-0.5 rounded-md uppercase tracking-widest whitespace-nowrap">
+                    Pronto
+                </span>
+            </div>
+
+            <!-- BOTONES DE ACCIÓN RÁPIDA (Se mantienen sólidos para llamar la atención) -->
+            <div class="grid grid-cols-3 gap-2 mt-5">
+                <a href="https://wa.me/573153790292" target="_blank" class="btn-hover bg-[#25D366] text-white py-2.5 rounded-[12px] flex items-center justify-center gap-1.5 font-medium text-[13px] shadow-md shadow-[#25D366]/30">
+                    <i class="ph-fill ph-whatsapp-logo text-base"></i> Pedir
+                </a>
+                <a href="https://www.instagram.com/reposteria_dulcetercipelo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn-hover gradient-ig text-white py-2.5 rounded-[12px] flex items-center justify-center gap-1.5 font-medium text-[13px] shadow-md shadow-pink-500/30">
+                    <i class="ph-fill ph-instagram-logo text-base"></i> IG
+                </a>
+                <a href="#" class="btn-hover bg-brand-main text-white py-2.5 rounded-[12px] flex items-center justify-center gap-1.5 font-medium text-[13px] shadow-md shadow-brand-main/30">
+                    <i class="ph-fill ph-globe text-base"></i> Web
+                </a>
+            </div>
+
+            <!-- Botón de Código QR -->
+            <button onclick="toggleQRModal()" class="btn-hover w-full mt-2 bg-brand-dark/90 backdrop-blur-sm text-white py-2.5 rounded-[12px] flex items-center justify-center gap-2 font-medium text-[13px] shadow-lg border border-white/10">
+                <i class="ph-fill ph-qr-code text-lg"></i> Ver Código QR
+            </button>
+
+        </section>
+
+        <!-- FOOTER ACTUALIZADO (Translúcido) -->
+        <footer class="bg-brand-dark/80 backdrop-blur-md text-center py-3 px-4 text-white/80 text-[9px] tracking-wider font-light flex flex-col gap-1 border-t border-white/10">
+            <span>Dulce Terciopelo © 2026</span>
+            <span class="text-[8px] opacity-60">Desarrollado por Samuel M.M</span>
+        </footer>
+    </main>
+
+    <!-- MODAL PARA EL CÓDIGO QR -->
+    <div id="qrModal" class="fixed inset-0 bg-brand-dark/80 backdrop-blur-sm z-50 hidden flex-col items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white/90 backdrop-blur-xl p-6 rounded-[24px] shadow-2xl max-w-[280px] w-full text-center relative transform scale-95 transition-transform duration-300 border border-white" id="qrCard">
+            <!-- Botón cerrar -->
+            <button onclick="toggleQRModal()" class="absolute top-3 right-3 text-brand-light hover:text-brand-main transition-colors">
+                <i class="ph ph-x-circle text-2xl"></i>
+            </button>
+            
+            <h3 class="font-serif text-xl text-brand-main mb-1 mt-1">Escanea</h3>
+            <p class="text-[11px] text-brand-light mb-5">Para ver nuestro catálogo</p>
+            
+            <!-- Generador automático de QR -->
+            <div class="bg-brand-bg p-3 rounded-[14px] inline-block border border-brand-card">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://dulceterciopelo.com&color=8A2742&bgcolor=FDF8F9" alt="Código QR Dulce Terciopelo" class="w-full h-auto rounded-md">
+            </div>
+            
+            <div class="mt-4 flex items-center justify-center gap-1.5 text-brand-main font-medium text-xs">
+                <i class="ph-fill ph-cupcake text-lg"></i> Dulce Terciopelo
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para controlar el Modal del QR -->
+    <script>
+        const modal = document.getElementById('qrModal');
+        const qrCard = document.getElementById('qrCard');
+
+        function toggleQRModal() {
+            if (modal.classList.contains('hidden')) {
+                // Abrir modal
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                // Pequeño retraso para que la transición CSS funcione
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    qrCard.classList.remove('scale-95');
+                }, 10);
+            } else {
+                // Cerrar modal
+                modal.classList.add('opacity-0');
+                qrCard.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    modal.classList.remove('flex');
+                }, 300);
+            }
+        }
+
+        // Cerrar modal si se hace clic afuera de la tarjeta blanca
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                toggleQRModal();
+            }
+        });
+    </script>
+</body>
+</html>
